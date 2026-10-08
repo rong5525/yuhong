@@ -39,9 +39,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
   backdrop-filter: blur(12px);
 }
 .header-inner {
-  min-height: 4.9rem; display: grid;
+  min-height: 4.45rem; display: grid;
   grid-template-columns: auto 1fr auto; align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 .wordmark {
   font-family: Georgia, "Times New Roman", serif;
@@ -68,19 +68,19 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 .language-switch [data-language-option].is-active { color: var(--accent); }
 
 .intro {
-  min-height: 34rem; display: grid;
-  grid-template-columns: minmax(15rem, .38fr) minmax(0, 1fr);
-  gap: clamp(3rem, 7vw, 7.5rem); align-items: center;
-  padding: clamp(5rem, 10vw, 9rem) 0;
+  display: grid;
+  grid-template-columns: minmax(14rem, .32fr) minmax(0, 1fr);
+  gap: clamp(3rem, 5vw, 4.75rem); align-items: center;
+  padding: clamp(3.75rem, 6vw, 5.5rem) 0;
 }
 .portrait-placeholder {
-  width: min(100%, 22rem); aspect-ratio: 4 / 5;
+  width: min(100%, 18rem); aspect-ratio: 4 / 5;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   border: 1px solid var(--line); background: var(--soft); color: var(--muted);
 }
 .portrait-placeholder span {
   color: var(--ink); font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(4rem, 7vw, 6.5rem); letter-spacing: -.08em;
+  font-size: clamp(3.25rem, 5vw, 4.75rem); letter-spacing: -.08em;
 }
 .portrait-placeholder small { font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; }
 .kicker {
@@ -90,15 +90,15 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outlin
 h1, h2, h3, p { margin-top: 0; }
 h1 {
   margin-bottom: .65rem; font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(4rem, 8vw, 7.4rem); font-weight: 400;
-  line-height: .96; letter-spacing: -.06em;
+  font-size: clamp(3.15rem, 5.5vw, 4.85rem); font-weight: 400;
+  line-height: 1; letter-spacing: -.05em;
 }
 .identity {
   display: flex; flex-wrap: wrap; gap: .55rem; margin-bottom: 2rem;
   color: var(--muted); font-size: clamp(1rem, 1.8vw, 1.2rem);
 }
 .separator { color: var(--line); }
-.intro-copy { max-width: 52rem; margin-bottom: 2.2rem; font-size: clamp(1.05rem, 1.45vw, 1.18rem); }
+.intro-copy { max-width: 52rem; margin-bottom: 1.75rem; font-size: clamp(1rem, 1.25vw, 1.1rem); }
 .intro-links { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; }
 .intro-links a, .intro-links button {
   border: 0; border-bottom: 1px solid var(--ink); background: none;
@@ -108,8 +108,8 @@ h1 {
 .intro-links a:hover, .intro-links button:hover { border-color: var(--accent); color: var(--accent); }
 
 .resume-section {
-  display: grid; grid-template-columns: minmax(12rem, .28fr) minmax(0, 1fr);
-  gap: clamp(3rem, 7vw, 7.5rem); padding: clamp(4.5rem, 8vw, 7rem) 0;
+  display: grid; grid-template-columns: minmax(10rem, .23fr) minmax(0, 1fr);
+  gap: clamp(3rem, 5vw, 4.75rem); padding: clamp(3.25rem, 5vw, 4.5rem) 0;
   border-top: 1px solid var(--line);
 }
 .section-label span {
@@ -118,13 +118,13 @@ h1 {
 }
 h2 {
   margin-bottom: 0; font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.15rem); font-weight: 400;
+  font-size: clamp(1.75rem, 2.8vw, 2.45rem); font-weight: 400;
   line-height: 1.1; letter-spacing: -.04em;
 }
 h3 { margin-bottom: .25rem; font-size: 1.12rem; line-height: 1.45; }
 .resume-entry {
   display: grid; grid-template-columns: minmax(8rem, .27fr) minmax(0, 1fr);
-  gap: 2rem; padding: 0 0 2.7rem; margin-bottom: 2.7rem;
+  gap: 1.75rem; padding: 0 0 2rem; margin-bottom: 2rem;
   border-bottom: 1px solid var(--line);
 }
 .resume-entry:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
@@ -138,7 +138,7 @@ h3 { margin-bottom: .25rem; font-size: 1.12rem; line-height: 1.45; }
 
 .project-row {
   display: grid; grid-template-columns: 2.5rem minmax(0, 1fr) minmax(8rem, auto);
-  gap: 1.5rem; align-items: start; padding: 1.7rem 0; border-top: 1px solid var(--line);
+  gap: 1.5rem; align-items: start; padding: 1.25rem 0; border-top: 1px solid var(--line);
 }
 .project-row:last-child { border-bottom: 1px solid var(--line); }
 .project-index { color: var(--accent); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .78rem; }
@@ -148,19 +148,19 @@ h3 { margin-bottom: .25rem; font-size: 1.12rem; line-height: 1.45; }
 .honor-list { margin: 0; padding: 0; list-style: none; }
 .honor-list li {
   display: grid; grid-template-columns: 1fr auto; gap: 2rem;
-  padding: 1.15rem 0; border-top: 1px solid var(--line);
+  padding: .95rem 0; border-top: 1px solid var(--line);
 }
 .honor-list li:last-child { border-bottom: 1px solid var(--line); }
 .honor-list li span:last-child { color: var(--muted); font-size: .84rem; }
-.skill-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.skill-columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem; }
 .skill-columns > div { border-top: 2px solid var(--ink); padding-top: 1rem; }
 .skill-columns p { margin-bottom: 0; color: var(--muted); }
-.contact-section { padding-bottom: 5rem; }
+.contact-section { padding-bottom: 3.75rem; }
 .contact-content p { max-width: 42rem; color: var(--muted); }
 .contact-content a { color: var(--accent); font-size: clamp(1.35rem, 3vw, 2.1rem); }
 footer {
   display: flex; justify-content: space-between; gap: 2rem;
-  padding: 2rem 0 3rem; border-top: 1px solid var(--line);
+  padding: 1.5rem 0 2.25rem; border-top: 1px solid var(--line);
   color: var(--muted); font-size: .84rem;
 }
 footer p { margin: 0; }
@@ -174,17 +174,17 @@ footer p { margin: 0; }
   }
   .main-nav::-webkit-scrollbar { display: none; }
   .language-switch { grid-column: 2; grid-row: 1; justify-self: end; }
-  .intro, .resume-section { gap: 3rem; }
+  .intro, .resume-section { gap: 2.5rem; }
 }
 
 @media (max-width: 720px) {
   html { scroll-padding-top: 8rem; }
   .site-shell { width: min(100% - 1.5rem, var(--shell)); }
-  .intro { grid-template-columns: 1fr; gap: 2.5rem; padding: 4rem 0 5rem; }
-  .portrait-placeholder { width: 11rem; aspect-ratio: 1; }
-  .portrait-placeholder span { font-size: 3.6rem; }
-  h1 { font-size: clamp(3.6rem, 18vw, 5.5rem); }
-  .resume-section { grid-template-columns: 1fr; gap: 2.5rem; }
+  .intro { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 0 3.75rem; }
+  .portrait-placeholder { width: 10rem; aspect-ratio: 1; }
+  .portrait-placeholder span { font-size: 3rem; }
+  h1 { font-size: clamp(3rem, 15vw, 4.1rem); }
+  .resume-section { grid-template-columns: 1fr; gap: 1.9rem; }
   .resume-entry { grid-template-columns: 1fr; gap: .75rem; }
   .project-row { grid-template-columns: 2rem 1fr; }
   .project-meta { grid-column: 2; text-align: left; }
