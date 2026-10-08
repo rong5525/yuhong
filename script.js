@@ -9,7 +9,7 @@ function applyLanguage(language) {
 
   document.documentElement.lang = isChinese ? "zh-CN" : "en";
   document.title = isChinese
-    ? "Yuhong Li · 个人主页"
+    ? "李羽弘 · 个人主页"
     : "Yuhong Li · Personal Homepage";
 
   translatableElements.forEach((element) => {
