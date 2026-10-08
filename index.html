@@ -3,239 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Yuhong 的个人简历网站，展示经历、项目、教育背景与专业技能。"
-    />
-    <meta name="theme-color" content="#f5f7fb" />
-    <title>Yuhong · 个人简历</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101a33'/%3E%3Cpath d='M16 18h9l7 12 7-12h9L36 38v10h-8V38z' fill='%2374a7ff'/%3E%3C/svg%3E"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Yuhong Li — 西南交通大学高分子材料专业个人主页与简历。" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Yuhong Li · Personal Homepage</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2313171f'/%3E%3Cpath d='M15 16h9l8 14 8-14h9L36 37v11h-8V37z' fill='white'/%3E%3C/svg%3E" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">跳到主要内容</a>
+    <a class="skip-link" href="#main" data-zh="跳到主要内容" data-en="Skip to main content">跳到主要内容</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark">Y</span>
-        <span>Yuhong</span>
-      </a>
-      <nav aria-label="主要导航">
-        <a href="#experience">经历</a>
-        <a href="#projects">项目</a>
-        <a href="#education">教育</a>
-        <a href="#skills">技能</a>
-      </nav>
-      <button class="print-button" type="button" id="print-resume">
-        打印 / 存为 PDF
-      </button>
+      <div class="site-shell header-inner">
+        <a class="wordmark" href="#about" aria-label="Yuhong Li homepage">YL</a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="#about" data-zh="简介" data-en="About">简介</a>
+          <a href="#education" data-zh="教育" data-en="Education">教育</a>
+          <a href="#experience" data-zh="经历" data-en="Experience">经历</a>
+          <a href="#projects" data-zh="项目" data-en="Projects">项目</a>
+          <a href="#honors" data-zh="荣誉" data-en="Honors">荣誉</a>
+          <a href="#skills" data-zh="技能" data-en="Skills">技能</a>
+          <a href="#contact" data-zh="联系" data-en="Contact">联系</a>
+        </nav>
+        <button class="language-switch" id="language-switch" type="button" aria-label="Switch to English">
+          <span data-language-option="zh">中</span><span aria-hidden="true">/</span><span data-language-option="en">EN</span>
+        </button>
+      </div>
     </header>
 
-    <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">PERSONAL RÉSUMÉ · 2026</p>
-          <h1 id="hero-title">
-            你好，我是 <span>Yuhong</span>。<br />
-            我把想法变成清晰、可靠的成果。
-          </h1>
-          <p class="intro">
-            这里放一段 2–3 句的个人简介：目前的身份、擅长的方向，以及希望寻找的机会。
-            内容可以保持真诚、具体，不需要写得像传统求职模板。
+    <main class="site-shell" id="main">
+      <section class="intro section-anchor" id="about" aria-labelledby="page-title">
+        <div class="portrait-placeholder" aria-label="Portrait placeholder">
+          <span>YH</span>
+          <small data-zh="照片位置" data-en="Portrait">照片位置</small>
+        </div>
+        <div class="intro-content">
+          <p class="kicker" data-zh="个人主页 / 简历" data-en="Personal Homepage / Résumé">个人主页 / 简历</p>
+          <h1 id="page-title">Yuhong Li</h1>
+          <p class="identity">
+            <span data-zh="西南交通大学" data-en="Southwest Jiaotong University">西南交通大学</span>
+            <span class="separator" aria-hidden="true">·</span>
+            <span data-zh="高分子材料专业" data-en="Polymer Materials">高分子材料专业</span>
           </p>
-          <div class="hero-actions" aria-label="联系方式">
-            <a class="primary-link" href="mailto:hello@example.com">联系我</a>
-            <a class="text-link" href="#projects">查看项目</a>
+          <p class="intro-copy" data-zh="这里将放一段简洁的个人介绍：学习方向、关注的问题，以及未来希望探索的机会。现阶段先保留为内容框架，之后再根据真实简历补充。" data-en="A concise introduction will go here, covering academic interests, current focus, and the opportunities Yuhong hopes to explore. This is a working structure to be completed with résumé details later.">这里将放一段简洁的个人介绍：学习方向、关注的问题，以及未来希望探索的机会。现阶段先保留为内容框架，之后再根据真实简历补充。</p>
+          <div class="intro-links" aria-label="Profile links">
+            <a href="#contact" data-zh="联系方式" data-en="Contact">联系方式</a>
+            <a href="#projects" data-zh="查看项目" data-en="View projects">查看项目</a>
+            <button id="print-resume" type="button" data-zh="打印简历" data-en="Print résumé">打印简历</button>
           </div>
         </div>
-
-        <aside class="profile-card" aria-label="个人信息摘要">
-          <div class="profile-monogram" aria-hidden="true">YH</div>
-          <dl>
-            <div>
-              <dt>所在地</dt>
-              <dd>城市 / 可远程</dd>
-            </div>
-            <div>
-              <dt>关注方向</dt>
-              <dd>请替换为专业方向</dd>
-            </div>
-            <div>
-              <dt>当前状态</dt>
-              <dd><span class="status-dot"></span>开放新的机会</dd>
-            </div>
-          </dl>
-        </aside>
       </section>
 
-      <section class="section" id="experience" aria-labelledby="experience-title">
-        <div class="section-heading">
-          <p class="section-number">01</p>
-          <div>
-            <p class="eyebrow">EXPERIENCE</p>
-            <h2 id="experience-title">经历</h2>
-          </div>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <p>2024 — 至今</p>
-              <span>城市 / 远程</span>
-            </div>
-            <div class="timeline-content">
-              <h3>职位名称</h3>
-              <p class="organization">公司或组织名称</p>
-              <p>
-                用一两句话说明承担的核心工作，以及这段经历产生的结果。尽量使用数字、范围或具体成果。
-              </p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <p>2022 — 2024</p>
-              <span>城市 / 远程</span>
-            </div>
-            <div class="timeline-content">
-              <h3>上一段经历</h3>
-              <p class="organization">公司、实验室或学生组织</p>
-              <p>
-                描述具体职责、协作对象和最有代表性的成果，突出与目标岗位相关的能力。
-              </p>
+      <section class="resume-section section-anchor" id="education" aria-labelledby="education-title">
+        <div class="section-label"><span>01</span><h2 id="education-title" data-zh="教育背景" data-en="Education">教育背景</h2></div>
+        <div class="section-content">
+          <article class="resume-entry">
+            <div class="entry-time" data-zh="年份待补充" data-en="Dates to be added">年份待补充</div>
+            <div>
+              <h3 data-zh="西南交通大学" data-en="Southwest Jiaotong University">西南交通大学</h3>
+              <p class="entry-subtitle" data-zh="高分子材料专业" data-en="Polymer Materials">高分子材料专业</p>
+              <ul class="plain-list placeholder-list">
+                <li data-zh="学位、年级与预计毕业时间" data-en="Degree, year of study, and expected graduation">学位、年级与预计毕业时间</li>
+                <li data-zh="核心课程、成绩或研究方向" data-en="Core coursework, grades, or research interests">核心课程、成绩或研究方向</li>
+                <li data-zh="奖学金、学生工作或校园经历" data-en="Scholarships, leadership, or campus involvement">奖学金、学生工作或校园经历</li>
+              </ul>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <p class="section-number">02</p>
-          <div>
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2 id="projects-title">代表项目</h2>
-          </div>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-card--featured">
-            <div class="project-topline">
-              <span>01 / 重点项目</span>
-              <span>2026</span>
-            </div>
+      <section class="resume-section section-anchor" id="experience" aria-labelledby="experience-title">
+        <div class="section-label"><span>02</span><h2 id="experience-title" data-zh="经历" data-en="Experience">经历</h2></div>
+        <div class="section-content">
+          <article class="resume-entry">
+            <div class="entry-time" data-zh="时间" data-en="Date">时间</div>
             <div>
-              <h3>项目名称</h3>
-              <p>
-                一句话讲清项目解决了什么问题，再补充自己的职责、方法与最终成果。
-              </p>
+              <h3 data-zh="实习 / 科研 / 校园经历" data-en="Internship / Research / Campus Experience">实习 / 科研 / 校园经历</h3>
+              <p class="entry-subtitle" data-zh="机构或团队名称 · 所在地" data-en="Organization or team · Location">机构或团队名称 · 所在地</p>
+              <p data-zh="简要说明承担的角色、主要工作与产生的结果。" data-en="Summarize the role, key responsibilities, and outcomes.">简要说明承担的角色、主要工作与产生的结果。</p>
             </div>
-            <ul class="tag-list" aria-label="项目技能">
-              <li>核心技能</li>
-              <li>协作能力</li>
-              <li>成果类型</li>
-            </ul>
           </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>02 / 项目</span>
-              <span>2025</span>
-            </div>
+          <article class="resume-entry">
+            <div class="entry-time" data-zh="时间" data-en="Date">时间</div>
             <div>
-              <h3>项目名称</h3>
-              <p>简要说明项目背景、你的贡献，以及可以被验证的成果。</p>
+              <h3 data-zh="第二段经历" data-en="Second Experience">第二段经历</h3>
+              <p class="entry-subtitle" data-zh="机构或团队名称 · 所在地" data-en="Organization or team · Location">机构或团队名称 · 所在地</p>
+              <p data-zh="突出与目标方向相关的能力，并尽量加入具体成果。" data-en="Highlight relevant skills and include measurable outcomes where possible.">突出与目标方向相关的能力，并尽量加入具体成果。</p>
             </div>
-            <ul class="tag-list" aria-label="项目技能">
-              <li>研究</li>
-              <li>执行</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span>03 / 项目</span>
-              <span>2024</span>
-            </div>
-            <div>
-              <h3>项目名称</h3>
-              <p>如果有作品链接，后续可以把整张卡片改成可点击的项目入口。</p>
-            </div>
-            <ul class="tag-list" aria-label="项目技能">
-              <li>创意</li>
-              <li>沟通</li>
-            </ul>
           </article>
         </div>
       </section>
 
-      <section class="section split-section" id="education" aria-labelledby="education-title">
-        <div>
-          <div class="section-heading section-heading--compact">
-            <p class="section-number">03</p>
-            <div>
-              <p class="eyebrow">EDUCATION</p>
-              <h2 id="education-title">教育背景</h2>
-            </div>
-          </div>
-          <article class="education-card">
-            <p class="date">2022 — 2026</p>
-            <h3>学校名称</h3>
-            <p>专业名称 · 学位</p>
-            <p class="muted">可补充荣誉、奖项、交换经历或与求职方向相关的课程。</p>
-          </article>
-        </div>
-
-        <div id="skills">
-          <div class="section-heading section-heading--compact">
-            <p class="section-number">04</p>
-            <div>
-              <p class="eyebrow">CAPABILITIES</p>
-              <h2>技能</h2>
-            </div>
-          </div>
-          <div class="skill-groups">
-            <div>
-              <h3>专业能力</h3>
-              <p>技能一 · 技能二 · 技能三 · 技能四</p>
-            </div>
-            <div>
-              <h3>工具</h3>
-              <p>工具一 · 工具二 · 工具三 · 工具四</p>
-            </div>
-            <div>
-              <h3>语言</h3>
-              <p>中文（母语）· 英语（请填写水平）</p>
-            </div>
-          </div>
+      <section class="resume-section section-anchor" id="projects" aria-labelledby="projects-title">
+        <div class="section-label"><span>03</span><h2 id="projects-title" data-zh="项目" data-en="Projects">项目</h2></div>
+        <div class="section-content project-list">
+          <article class="project-row"><div class="project-index">A</div><div><h3 data-zh="项目名称" data-en="Project Title">项目名称</h3><p data-zh="项目背景、个人职责与最终成果。" data-en="Context, individual contribution, and outcome.">项目背景、个人职责与最终成果。</p></div><div class="project-meta" data-zh="年份 · 关键词" data-en="Year · Keywords">年份 · 关键词</div></article>
+          <article class="project-row"><div class="project-index">B</div><div><h3 data-zh="项目名称" data-en="Project Title">项目名称</h3><p data-zh="项目背景、个人职责与最终成果。" data-en="Context, individual contribution, and outcome.">项目背景、个人职责与最终成果。</p></div><div class="project-meta" data-zh="年份 · 关键词" data-en="Year · Keywords">年份 · 关键词</div></article>
+          <article class="project-row"><div class="project-index">C</div><div><h3 data-zh="项目名称" data-en="Project Title">项目名称</h3><p data-zh="项目背景、个人职责与最终成果。" data-en="Context, individual contribution, and outcome.">项目背景、个人职责与最终成果。</p></div><div class="project-meta" data-zh="年份 · 关键词" data-en="Year · Keywords">年份 · 关键词</div></article>
         </div>
       </section>
 
-      <section class="contact-section" aria-labelledby="contact-title">
-        <p class="eyebrow">LET'S CONNECT</p>
-        <h2 id="contact-title">期待认识你。</h2>
-        <p>这里可以换成更符合她个性的结束语，并补上真实邮箱与社交账号。</p>
-        <div class="contact-links">
+      <section class="resume-section section-anchor" id="honors" aria-labelledby="honors-title">
+        <div class="section-label"><span>04</span><h2 id="honors-title" data-zh="荣誉与活动" data-en="Honors & Activities">荣誉与活动</h2></div>
+        <div class="section-content">
+          <ol class="honor-list">
+            <li><span data-zh="奖项、竞赛或证书名称" data-en="Award, competition, or certification">奖项、竞赛或证书名称</span><span data-zh="年份" data-en="Year">年份</span></li>
+            <li><span data-zh="学生组织、志愿活动或社会实践" data-en="Student organization, volunteering, or service">学生组织、志愿活动或社会实践</span><span data-zh="年份" data-en="Year">年份</span></li>
+            <li><span data-zh="其他值得展示的经历" data-en="Another relevant achievement">其他值得展示的经历</span><span data-zh="年份" data-en="Year">年份</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="resume-section section-anchor" id="skills" aria-labelledby="skills-title">
+        <div class="section-label"><span>05</span><h2 id="skills-title" data-zh="技能" data-en="Skills">技能</h2></div>
+        <div class="section-content skill-columns">
+          <div><h3 data-zh="专业技能" data-en="Technical">专业技能</h3><p data-zh="实验技能、材料表征、数据分析等" data-en="Laboratory skills, material characterization, data analysis">实验技能、材料表征、数据分析等</p></div>
+          <div><h3 data-zh="工具" data-en="Tools">工具</h3><p data-zh="软件、仪器或其他工具" data-en="Software, instruments, and other tools">软件、仪器或其他工具</p></div>
+          <div><h3 data-zh="语言" data-en="Languages">语言</h3><p data-zh="中文 · 英语（水平待补充）" data-en="Chinese · English (level to be added)">中文 · 英语（水平待补充）</p></div>
+        </div>
+      </section>
+
+      <section class="resume-section section-anchor contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-label"><span>06</span><h2 id="contact-title" data-zh="联系" data-en="Contact">联系</h2></div>
+        <div class="section-content contact-content">
+          <p data-zh="邮箱、LinkedIn、GitHub 或其他希望公开的联系方式将在这里补充。" data-en="Email, LinkedIn, GitHub, and other public contact details will be added here.">邮箱、LinkedIn、GitHub 或其他希望公开的联系方式将在这里补充。</p>
           <a href="mailto:hello@example.com">hello@example.com</a>
-          <a href="#" aria-label="LinkedIn 链接待补充">LinkedIn</a>
-          <a href="#" aria-label="小红书或其他社交账号链接待补充">Social</a>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>© <span id="current-year">2026</span> Yuhong</p>
-      <p>简洁、真诚、持续更新。</p>
+    <footer class="site-shell">
+      <p>© <span id="current-year">2026</span> Yuhong Li</p>
+      <a href="#about" data-zh="返回顶部" data-en="Back to top">返回顶部</a>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
